@@ -1,0 +1,17 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.header{
+    -fx-background-color: #009688;
+}
+
+.number{
+    -fx-background-color: transparent;
+}
+.number:hover{
+    -fx-background-color:  rgba(0,0,0,0.1);
+}

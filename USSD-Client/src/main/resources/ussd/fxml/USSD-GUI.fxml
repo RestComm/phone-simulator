@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="307.0" styleClass="header" stylesheets="@../css/ussd-gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ussd.controllers.USSDGUIController">
+   <children>
+      <AnchorPane layoutY="79.0" prefHeight="321.0" prefWidth="307.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="79.0">
+         <children>
+            <Separator layoutX="4.0" layoutY="81.0" prefHeight="20.0" prefWidth="373.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" />
+            <TextField fx:id="txtExt" alignment="CENTER" layoutY="3.0" prefHeight="85.0" prefWidth="307.0" promptText="*555#" style="-fx-background-color: white;" AnchorPane.bottomAnchor="285.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </TextField>
+            <AnchorPane layoutX="4.0" layoutY="91.0" prefHeight="178.0" prefWidth="307.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <GridPane alignment="CENTER" layoutX="33.0" layoutY="22.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="158.0" prefWidth="373.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <StackPane onMouseClicked="#numberClicked" prefHeight="150.0" prefWidth="200.0" styleClass="number">
+                           <children>
+                              <Label text="1" textFill="#009688">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <StackPane onMouseClicked="#numberClicked" prefHeight="150.0" prefWidth="200.0" styleClass="number" GridPane.columnIndex="1">
+                           <children>
+                              <Label text="2" textFill="#009688">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <StackPane onMouseClicked="#numberClicked" prefHeight="150.0" prefWidth="200.0" styleClass="number" GridPane.columnIndex="2">
+                           <children>
+                              <Label text="3" textFill="#009688">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <StackPane onMouseClicked="#numberClicked" prefHeight="150.0" prefWidth="200.0" styleClass="number" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="4" textFill="#009688">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <StackPane onMouseClicked="#numberClicked" prefHeight="150.0" prefWidth="200.0" styleClass="number" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="5" textFill="#009688">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <StackPane onMouseClicked="#numberClicked" prefHeight="150.0" prefWidth="200.0" styleClass="number" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="6" textFill="#009688">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <StackPane onMouseClicked="#numberClicked" prefHeight="150.0" prefWidth="200.0" styleClass="number" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="7" textFill="#009688">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <StackPane onMouseClicked="#numberClicked" prefHeight="150.0" prefWidth="200.0" styleClass="number" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="8" textFill="#009688">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <StackPane onMouseClicked="#numberClicked" prefHeight="150.0" prefWidth="200.0" styleClass="number" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="9" textFill="#009688">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <StackPane onMouseClicked="#numberClicked" prefHeight="150.0" prefWidth="200.0" styleClass="number" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <children>
+                              <Label text="0" textFill="#009688">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <StackPane onMouseClicked="#numberClicked" prefHeight="150.0" prefWidth="200.0" styleClass="number" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <children>
+                              <Label text="#" textFill="#009688">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <Pane onMouseClicked="#numberClicked" prefHeight="200.0" prefWidth="200.0" styleClass="number" GridPane.rowIndex="3">
+                           <children>
+                              <Label layoutX="44.0" layoutY="8.0" prefHeight="20.0" prefWidth="14.0" text="*" textFill="#009688">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <Button layoutX="57.0" layoutY="315.0" mnemonicParsing="false" onAction="#btnCall" prefHeight="34.0" prefWidth="194.0" style="-fx-background-color: #1A237E;" text="Call" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="9.0" layoutY="50.0" text="Marcar" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="5.0" layoutY="69.0" prefHeight="10.0" prefWidth="69.0" />
+      <AnchorPane fx:id="pnlInitUSSD" prefHeight="452.0" prefWidth="307.0" style="-fx-background-color: rgba(0,0,0,0.6);" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane prefHeight="452.0" prefWidth="307.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane fx:id="pnlContent" maxHeight="70.0" maxWidth="290.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Pane fx:id="pnlProgress" layoutX="12.0" layoutY="8.0" prefHeight="56.0" prefWidth="258.0">
+                           <children>
+                              <Label layoutX="69.0" layoutY="21.0" text="Cargando código USSD" />
+                              <Arc fx:id="progress" fill="#ffffff00" layoutX="34.0" layoutY="27.0" length="150.0" radiusX="20.0" radiusY="20.0" stroke="#000000af" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pnlForm" layoutX="5.0" layoutY="6.0" prefHeight="288.0" prefWidth="280.0" visible="false">
+                           <children>
+                              <Label fx:id="lbltext" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="21.0" layoutY="23.0" lineSpacing="2.0" prefHeight="146.0" prefWidth="239.0" wrapText="true" />
+                              <TextField fx:id="txtSend" layoutX="22.0" layoutY="171.0" prefHeight="25.0" prefWidth="239.0" promptText="text" style="-fx-background-color: white; -fx-border-color: #3F51B5;" />
+                              <Button layoutX="112.0" layoutY="249.0" mnemonicParsing="false" onAction="#sendText" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #009688;" text="Enviar" textFill="WHITE" />
+                              <Button layoutX="192.0" layoutY="249.0" mnemonicParsing="false" onAction="#onCloseUSSD" style="-fx-background-color: #F44336;" text="Cancelar" textFill="WHITE" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pnlMessage" prefHeight="130.0" prefWidth="290.0" style="-fx-background-color: white;" visible="false">
+                           <children>
+                              <Label fx:id="lblMessage" alignment="TOP_CENTER" layoutX="13.0" layoutY="13.0" prefHeight="70.0" prefWidth="265.0" text="Resultado" wrapText="true" />
+                              <Button layoutX="127.0" layoutY="90.0" mnemonicParsing="false" onAction="#onCloseUSSD" style="-fx-background-color: #009688;" text="Ok" textFill="WHITE" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
