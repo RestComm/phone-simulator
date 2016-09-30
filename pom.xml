@@ -8,6 +8,7 @@
     <modules>
         <module>map-impl</module>
         <module>USSD-Client</module>
+        <module>core</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
