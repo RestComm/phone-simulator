@@ -2,7 +2,7 @@
 <heartbeattime value="10000"/>
 <useLsbForLinksetSelection value="false"/>
 <aspFactoryList>
-	<aspFactory name="testasp" assocName="Ass_main" started="true" maxseqnumber="256" aspid="3" heartbeat="false"/>
+	<aspFactory name="testasp" assocName="Ass_main" started="true" maxseqnumber="256" aspid="5" heartbeat="false"/>
 </aspFactoryList>
 <asList>
 	<as name="testas" minAspActiveForLb="1" functionality="IPSP" exchangeType="SE" ipspType="CLIENT">

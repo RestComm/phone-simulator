@@ -20,6 +20,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javax.management.Notification;
@@ -47,6 +48,8 @@ public class Impl {
     Timeline l1;
     Timeline l2;
     Timeline l3;
+    USSDGUIController context;
+    AnchorPane pnlInitUSSD;
 
     public Impl() {
         loadFiles();
@@ -63,7 +66,9 @@ public class Impl {
             @Override
             public void handleNotification(Notification notification, Object handback) {
                 String message = notification.getMessage();
+                System.out.println("xxxxxxxx: "+message);
                 if (pnlProgress != null && message.startsWith("Rcvd: unstrSsReq: ")) {
+                    pnlInitUSSD.setVisible(true);
                     Platform.runLater(() -> {
                         l1.stop();
                         pnlProgress.setVisible(false);
@@ -80,7 +85,6 @@ public class Impl {
                         lblMessage.setText(message.replace("Rcvd: procUnstrSsResp: ", ""));
                     });
                 }
-
             }
         }, null, null);
 

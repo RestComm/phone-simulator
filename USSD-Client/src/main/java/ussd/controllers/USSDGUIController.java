@@ -77,6 +77,8 @@ public class USSDGUIController implements Initializable {
         impl.l1 = l1 = startAnimateUSSD();
         impl.l2 = l2 = startAnimateForm300();
         impl.l3 = l3 = startAnimateForm130();
+        impl.context = this;
+        impl.pnlInitUSSD = pnlInitUSSD;
     }
 
     @FXML
@@ -113,7 +115,7 @@ public class USSDGUIController implements Initializable {
         lblMessage.setText("");
     }
 
-    private void tempCloseForm() {
+    public void tempCloseForm() {
         l1.play();
         pnlProgress.setVisible(true);
         pnlContent.setMaxHeight(70);

@@ -34,6 +34,7 @@ public class UssdClient extends Application {
         stage.setOnCloseRequest((WindowEvent event) -> {
             System.exit(0);
         });
+        stage.setResizable(false);
         stage.show();
        
     }

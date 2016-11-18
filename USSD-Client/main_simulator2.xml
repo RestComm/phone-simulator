@@ -11,12 +11,12 @@
 		<remoteHost2 value=""/>
 	</m3ua>
 	<dialogic SourceModuleId="0" DestinationModuleId="0"/>
-	<sccp routeOnGtMode="false" remoteSpc="2" localSpc="1" ni="2" remoteSsn="8" localSsn="8" translationType="0">
+	<sccp routeOnGtMode="true" remoteSpc="2" localSpc="1" ni="2" remoteSsn="8" localSsn="8" translationType="0">
 		<globalTitleType value="Translation type, numbering plan, encoding scheme and NOA ind"/>
 		<addressNature value="INTERNATIONAL"/>
 		<numberingPlan value="ISDN_TELEPHONY"/>
 		<sccpProtocolVersion value="ITU"/>
-		<callingPartyAddressDigits value=""/>
+		<callingPartyAddressDigits value="9960639902"/>
 	</sccp>
 	<map>
 		<remoteAddressDigits value=""/>
@@ -32,8 +32,8 @@
 		<msisdnAddress value=""/>
 		<msisdnAddressNature value="international_number"/>
 		<msisdnNumberingPlan value="ISDN"/>
-		<sriResponseImsi value=""/>
-		<sriResponseVlr value=""/>
+		<sriResponseImsi value="404685505601234"/>
+		<sriResponseVlr value="9960639999"/>
 		<sriReaction value="Return success"/>
 		<ussdClientAction value="Manual operation"/>
 		<autoRequestString value=""/>
