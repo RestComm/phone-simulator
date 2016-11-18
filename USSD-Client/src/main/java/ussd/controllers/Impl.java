@@ -66,7 +66,7 @@ public class Impl {
             @Override
             public void handleNotification(Notification notification, Object handback) {
                 String message = notification.getMessage();
-                System.out.println("xxxxxxxx: "+message);
+                System.out.println("xxxxxxxx: " + message);
                 if (pnlProgress != null && message.startsWith("Rcvd: unstrSsReq: ")) {
                     pnlInitUSSD.setVisible(true);
                     Platform.runLater(() -> {
@@ -84,6 +84,15 @@ public class Impl {
                         l3.play();
                         lblMessage.setText(message.replace("Rcvd: procUnstrSsResp: ", ""));
                     });
+                } else if (pnlProgress != null && message.startsWith("Rcvd: unstrSsNotify: ")) {
+                    pnlInitUSSD.setVisible(true);
+                    Platform.runLater(() -> {
+                        l1.stop();
+                        pnlProgress.setVisible(false);
+                        l3.play();
+                        lblMessage.setText(message.replace("Rcvd: unstrSsNotify: ", ""));
+                    });
+
                 }
             }
         }, null, null);
