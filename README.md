@@ -1,6 +1,6 @@
 # phone-simulator
 
-![USSD-Client](https://user-images.githubusercontent.com/1968058/27106859-748da2de-5052-11e7-9496-457587d67445.gif)
+![USSD-Client](https://user-images.githubusercontent.com/1968058/31864110-619351a4-b715-11e7-90a1-d65b9c3ca925.gif)
 
 This project is to simulate the Mobile Phone to do various demos. For now it will only support USSD Messages. It supports pull and push notification.
 
@@ -9,7 +9,7 @@ This project is to simulate the Mobile Phone to do various demos. For now it wil
 About
 ========
 
-This is a maven project, it was built using JDK 1.8 and it works with Telscale USSD GW 6.2.1, newer versions of USSD GW should be tested.
+This is a maven project, it was built using JDK 1.8 using NetBeans and it works with Telscale USSD GW 6.2.1, newer versions of USSD GW should be tested.
 
 The project consist of 3 modules:
 

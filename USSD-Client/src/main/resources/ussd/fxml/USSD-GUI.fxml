@@ -15,7 +15,7 @@
       <AnchorPane layoutY="79.0" prefHeight="321.0" prefWidth="307.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="79.0">
          <children>
             <Separator layoutX="4.0" layoutY="81.0" prefHeight="20.0" prefWidth="373.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" />
-            <TextField fx:id="txtExt" alignment="CENTER" layoutY="3.0" prefHeight="85.0" prefWidth="307.0" promptText="*555#" style="-fx-background-color: white;" AnchorPane.bottomAnchor="285.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+            <TextField fx:id="txtExt" alignment="CENTER" layoutY="3.0" prefHeight="85.0" prefWidth="307.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="285.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
                <font>
                   <Font size="37.0" />
                </font>
@@ -153,7 +153,7 @@
             <Button layoutX="57.0" layoutY="315.0" mnemonicParsing="false" onAction="#btnCall" prefHeight="34.0" prefWidth="194.0" style="-fx-background-color: #1A237E;" text="Call" textFill="WHITE" />
          </children>
       </AnchorPane>
-      <Label layoutX="9.0" layoutY="50.0" text="Marcar" textFill="WHITE">
+      <Label layoutX="9.0" layoutY="50.0" text="Dial" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>
@@ -167,21 +167,21 @@
                      <children>
                         <Pane fx:id="pnlProgress" layoutX="12.0" layoutY="8.0" prefHeight="56.0" prefWidth="258.0">
                            <children>
-                              <Label layoutX="69.0" layoutY="21.0" text="Cargando código USSD" />
+                              <Label layoutX="69.0" layoutY="21.0" text="USSD Code running..." />
                               <Arc fx:id="progress" fill="#ffffff00" layoutX="34.0" layoutY="27.0" length="150.0" radiusX="20.0" radiusY="20.0" stroke="#000000af" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" />
                            </children>
                         </Pane>
                         <Pane fx:id="pnlForm" layoutX="5.0" layoutY="6.0" prefHeight="288.0" prefWidth="280.0" visible="false">
                            <children>
                               <Label fx:id="lbltext" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="21.0" layoutY="23.0" lineSpacing="2.0" prefHeight="146.0" prefWidth="239.0" wrapText="true" />
-                              <TextField fx:id="txtSend" layoutX="22.0" layoutY="171.0" prefHeight="25.0" prefWidth="239.0" promptText="text" style="-fx-background-color: white; -fx-border-color: #3F51B5;" />
-                              <Button layoutX="112.0" layoutY="249.0" mnemonicParsing="false" onAction="#sendText" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #009688;" text="Enviar" textFill="WHITE" />
-                              <Button layoutX="192.0" layoutY="249.0" mnemonicParsing="false" onAction="#onCloseUSSD" style="-fx-background-color: #F44336;" text="Cancelar" textFill="WHITE" />
+                              <TextField fx:id="txtSend" layoutX="22.0" layoutY="171.0" prefHeight="25.0" prefWidth="239.0" style="-fx-background-color: white; -fx-border-color: #3F51B5;" />
+                              <Button layoutX="112.0" layoutY="249.0" mnemonicParsing="false" onAction="#sendText" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #009688;" text="Send" textFill="WHITE" />
+                              <Button layoutX="192.0" layoutY="249.0" mnemonicParsing="false" onAction="#onCloseUSSD" style="-fx-background-color: #F44336;" text="Cancel" textFill="WHITE" />
                            </children>
                         </Pane>
                         <Pane fx:id="pnlMessage" prefHeight="130.0" prefWidth="290.0" style="-fx-background-color: white;" visible="false">
                            <children>
-                              <Label fx:id="lblMessage" alignment="TOP_CENTER" layoutX="13.0" layoutY="13.0" prefHeight="70.0" prefWidth="265.0" text="Resultado" wrapText="true" />
+                              <Label fx:id="lblMessage" alignment="TOP_CENTER" layoutX="13.0" layoutY="13.0" prefHeight="70.0" prefWidth="265.0" wrapText="true" />
                               <Button layoutX="127.0" layoutY="90.0" mnemonicParsing="false" onAction="#onCloseUSSD" style="-fx-background-color: #009688;" text="Ok" textFill="WHITE" />
                            </children>
                         </Pane>
